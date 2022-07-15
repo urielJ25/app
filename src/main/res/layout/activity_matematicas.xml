@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatematicasActivity">
+
+    <TextView
+        android:id="@+id/lbInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="De los siguientes números indicar si es par o none:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <TextView
+        android:id="@+id/txQt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/txQt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <TextView
+        android:id="@+id/txQt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/txQt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <EditText
+        android:id="@+id/inAw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inAw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inAw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/inAw4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:textColor="@color/purple_500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        app:cornerRadius="20dp" />
+
+</RelativeLayout>

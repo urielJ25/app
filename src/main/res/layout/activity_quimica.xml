@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuimicaActivity">
+
+    <TextView
+        android:id="@+id/lbInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/lb_intructions"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txQt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta1" />
+
+    <EditText
+        android:id="@+id/inAw1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txQt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta2" />
+
+    <EditText
+        android:id="@+id/inAw2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txQt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta3" />
+
+    <EditText
+        android:id="@+id/inAw3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txQt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta4" />
+
+    <EditText
+        android:id="@+id/inAw4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/txQt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta5" />
+
+    <EditText
+        android:id="@+id/inAw5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a."
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:textColor="@color/purple_500"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        app:cornerRadius="20dp"/>
+
+    <TextView
+        android:id="@+id/op1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a." />
+
+    <TextView
+        android:id="@+id/op2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b." />
+
+    <TextView
+        android:id="@+id/op3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="c." />
+
+    <TextView
+        android:id="@+id/op4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="d." />
+
+    <TextView
+        android:id="@+id/op5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e." />
+
+
+</RelativeLayout>

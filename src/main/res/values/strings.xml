@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Quimica</string>
+    <string name="txt_boton">Begin</string>
+    <string name="txt_edit">Materias</string>
+    <string name="txt_physics">Física</string>
+    <string name="txt_maths">Matemáticas</string>
+    <string name="txt_chemistry">Química</string>
+    <string name="lb_intructions">Relaciona las columnas de acuerdo a la definición</string>
+</resources>

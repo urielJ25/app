@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo"
+    tools:context=".Principal_Activity">
+    
+    <TextView
+        android:id="@+id/lbTopics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/txt_edit"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <ImageButton
+        android:id="@+id/imageBtnPhysics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_top"
+        app:srcCompat="@mipmap/fisica" />
+
+    <ImageButton
+        android:id="@+id/imageBtnMaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_top"
+        app:srcCompat="@mipmap/mate" />
+
+    <ImageButton
+        android:id="@+id/imageBtnChemistry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_top"
+        app:srcCompat="@mipmap/quimica"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/lbPhysics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_bottom"
+        android:fontFamily="casual"
+        android:text="@string/txt_physics"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/lbMaths"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_bottom"
+        android:fontFamily="casual"
+        android:text="@string/txt_maths"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"  />
+
+    <Button
+        android:id="@+id/lbChemistry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redondo_bottom"
+        android:fontFamily="casual"
+        android:text="@string/txt_chemistry"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRead1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@mipmap/book" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRead2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@mipmap/book" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRead3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@mipmap/book" />
+
+
+</RelativeLayout>
+
