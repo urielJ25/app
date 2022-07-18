@@ -41,7 +41,7 @@
         app:cornerRadius="20dp"/>
 
     <Button
-        android:id="@+id/lbPhysics"
+        android:id="@+id/btnPhysics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/redondo_bottom"
@@ -53,7 +53,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/lbMaths"
+        android:id="@+id/btnMaths"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/redondo_bottom"
@@ -65,7 +65,7 @@
         android:textStyle="bold"  />
 
     <Button
-        android:id="@+id/lbChemistry"
+        android:id="@+id/btnChemistry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/redondo_bottom"
@@ -96,6 +96,25 @@
         android:layout_height="wrap_content"
         android:background="@null"
         app:srcCompat="@mipmap/book" />
+
+    <TextView
+        android:id="@+id/lbRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="El mol es la unidad SI para medir cantidad de sustancia; la cual contiene tantas
+        partículas elementales como átomos de carbono hay en 0,012 kg de carbono-12. " />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/white"
+        app:cornerRadius="20dp" />
 
 
 </RelativeLayout>

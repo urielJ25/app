@@ -20,9 +20,9 @@ public class Principal_Activity extends AppCompatActivity {
     RelativeLayout.LayoutParams params;
     int width;
     int height;
-    private TextView lbTopics;
+    private TextView lbTopics, lbRead;
     private ImageButton imageBtnPhysics, imageBtnMaths, imageBtnChemistry, imgBtnRead1, imgBtnRead2, imgBtnRead3;
-    private Button btnPhysics, btnMaths, btnChemistry;
+    private Button btnPhysics, btnMaths, btnChemistry, btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class Principal_Activity extends AppCompatActivity {
         height = metrics.heightPixels; // alto absoluto en pixels
 
         lbTopics = findViewById(R.id.lbTopics);
+        lbRead = findViewById(R.id.lbRead);
 
         imageBtnPhysics = findViewById(R.id.imageBtnPhysics);
         imageBtnMaths = findViewById(R.id.imageBtnMaths);
@@ -44,9 +45,13 @@ public class Principal_Activity extends AppCompatActivity {
         imgBtnRead2 = findViewById(R.id.imgBtnRead2);
         imgBtnRead3 = findViewById(R.id.imgBtnRead3);
 
-        btnPhysics = findViewById(R.id.lbPhysics);
-        btnMaths = findViewById(R.id.lbMaths);
-        btnChemistry = findViewById(R.id.lbChemistry);
+        btnPhysics = findViewById(R.id.btnPhysics);
+        btnMaths = findViewById(R.id.btnMaths);
+        btnChemistry = findViewById(R.id.btnChemistry);
+        btnBack = findViewById(R.id.btnBack);
+
+        lbRead.setVisibility(View.INVISIBLE);
+        btnBack.setVisibility(View.INVISIBLE);
 
         //POSICIONES
 
@@ -130,6 +135,22 @@ public class Principal_Activity extends AppCompatActivity {
         params.leftMargin = (int) (width * 0.7);
         imgBtnRead3.setLayoutParams(params);
 
+        params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        // Button lbRead
+        params.width = (int) (width * 0.7);
+        params.height = (int) (height * 0.8);
+        params.topMargin = (int) (height * 0.2);
+        params.leftMargin = (int) (width * 0.1);
+        lbRead.setLayoutParams(params);
+
+        params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        // Button back
+        params.width = (int) (width * 0.2);
+        params.height = (int) (height * 0.05);
+        params.topMargin = (int) (height * 0.8);
+        params.leftMargin = (int) (width * 0.05);
+        btnBack.setLayoutParams(params);
+
         imageBtnMaths.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -159,6 +180,96 @@ public class Principal_Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Principal_Activity.this, MatematicasActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        imgBtnRead1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lbTopics.setText("Moles");
+                imageBtnPhysics.setVisibility(View.INVISIBLE);
+                imageBtnMaths.setVisibility(View.INVISIBLE);
+                imageBtnChemistry.setVisibility(View.INVISIBLE);
+
+                imgBtnRead1.setVisibility(View.INVISIBLE);
+                imgBtnRead2.setVisibility(View.INVISIBLE);
+                imgBtnRead3.setVisibility(View.INVISIBLE);
+
+                btnPhysics.setVisibility(View.INVISIBLE);
+                btnMaths.setVisibility(View.INVISIBLE);
+                btnChemistry.setVisibility(View.INVISIBLE);
+
+                lbRead.setVisibility(View.VISIBLE);
+                btnBack.setVisibility(View.VISIBLE);
+
+                btnBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Principal_Activity.this, Principal_Activity.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+        });
+
+        imgBtnRead2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lbTopics.setText("Álgebra");
+                imageBtnPhysics.setVisibility(View.INVISIBLE);
+                imageBtnMaths.setVisibility(View.INVISIBLE);
+                imageBtnChemistry.setVisibility(View.INVISIBLE);
+
+                imgBtnRead1.setVisibility(View.INVISIBLE);
+                imgBtnRead2.setVisibility(View.INVISIBLE);
+                imgBtnRead3.setVisibility(View.INVISIBLE);
+
+                btnPhysics.setVisibility(View.INVISIBLE);
+                btnMaths.setVisibility(View.INVISIBLE);
+                btnChemistry.setVisibility(View.INVISIBLE);
+
+                lbRead.setVisibility(View.VISIBLE);
+                btnBack.setVisibility(View.VISIBLE);
+
+                btnBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Principal_Activity.this, Principal_Activity.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+        });
+
+        imgBtnRead3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lbTopics.setText("Moles");
+                imageBtnPhysics.setVisibility(View.INVISIBLE);
+                imageBtnMaths.setVisibility(View.INVISIBLE);
+                imageBtnChemistry.setVisibility(View.INVISIBLE);
+
+                imgBtnRead1.setVisibility(View.INVISIBLE);
+                imgBtnRead2.setVisibility(View.INVISIBLE);
+                imgBtnRead3.setVisibility(View.INVISIBLE);
+
+                btnPhysics.setVisibility(View.INVISIBLE);
+                btnMaths.setVisibility(View.INVISIBLE);
+                btnChemistry.setVisibility(View.INVISIBLE);
+
+                lbRead.setVisibility(View.VISIBLE);
+                btnBack.setVisibility(View.VISIBLE);
+
+                btnBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Principal_Activity.this, Principal_Activity.class);
+                        startActivity(intent);
+                    }
+                });
+
             }
         });
     }
