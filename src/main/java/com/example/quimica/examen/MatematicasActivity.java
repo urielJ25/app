@@ -1,4 +1,4 @@
-package com.example.quimica;
+package com.example.quimica.examen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,9 +8,11 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.quimica.Principal_Activity;
+import com.example.quimica.R;
 
 public class MatematicasActivity extends AppCompatActivity {
 

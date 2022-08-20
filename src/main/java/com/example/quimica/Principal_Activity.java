@@ -2,17 +2,19 @@ package com.example.quimica;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.Display;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.quimica.examen.FisicaActivity;
+import com.example.quimica.examen.MatematicasActivity;
+import com.example.quimica.examen.QuimicaActivity;
 
 public class Principal_Activity extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class Principal_Activity extends AppCompatActivity {
     int height;
     private TextView lbTopics, lbRead;
     private ImageButton imageBtnPhysics, imageBtnMaths, imageBtnChemistry, imgBtnRead1, imgBtnRead2, imgBtnRead3;
-    private Button btnPhysics, btnMaths, btnChemistry, btnBack;
+    private Button btnPhysics, btnMaths, btnChemistry, btnExamenDiagnostico,btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,10 +50,15 @@ public class Principal_Activity extends AppCompatActivity {
         btnPhysics = findViewById(R.id.btnPhysics);
         btnMaths = findViewById(R.id.btnMaths);
         btnChemistry = findViewById(R.id.btnChemistry);
+        btnChemistry = findViewById(R.id.btnChemistry);
+        btnExamenDiagnostico = findViewById(R.id.btnExamenDiagnostico);
         btnBack = findViewById(R.id.btnBack);
 
         lbRead.setVisibility(View.INVISIBLE);
         btnBack.setVisibility(View.INVISIBLE);
+
+        //btnPhysics.setBackgroundColor(0);
+        //btnPhysics.setTextColor(Color.parseColor("#FFFFF"));
 
         //POSICIONES
 
@@ -144,12 +151,28 @@ public class Principal_Activity extends AppCompatActivity {
         lbRead.setLayoutParams(params);
 
         params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+        // Button btnExamenDiagnostico
+        params.width = (int) (width * 0.35); //Tamaño
+        params.height = (int) (height * 0.07);
+        params.topMargin = (int) (height * 0.7);//Posicion
+        params.leftMargin = (int) (width * 0.33);
+        btnExamenDiagnostico.setLayoutParams(params);
+
+        params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
         // Button back
         params.width = (int) (width * 0.2);
         params.height = (int) (height * 0.05);
         params.topMargin = (int) (height * 0.8);
         params.leftMargin = (int) (width * 0.05);
         btnBack.setLayoutParams(params);
+
+        imageBtnPhysics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Principal_Activity.this, FisicaActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imageBtnMaths.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,6 +202,14 @@ public class Principal_Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Principal_Activity.this, MatematicasActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPhysics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Principal_Activity.this, FisicaActivity.class);
                 startActivity(intent);
             }
         });
@@ -216,6 +247,7 @@ public class Principal_Activity extends AppCompatActivity {
         imgBtnRead2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 lbTopics.setText("Álgebra");
                 imageBtnPhysics.setVisibility(View.INVISIBLE);
                 imageBtnMaths.setVisibility(View.INVISIBLE);
@@ -265,12 +297,23 @@ public class Principal_Activity extends AppCompatActivity {
                 btnBack.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Principal_Activity.this, Principal_Activity.class);
+                        //Intent intent = new Intent(Principal_Activity.this, Principal_Activity.class);
+                        //startActivity(intent);
+                        Intent intent = new Intent(Principal_Activity.this, MensajeActivity.class);
                         startActivity(intent);
                     }
                 });
 
             }
         });
+
+        btnExamenDiagnostico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Principal_Activity.this, ExDiagnosticoActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

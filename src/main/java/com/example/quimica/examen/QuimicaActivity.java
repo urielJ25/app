@@ -1,4 +1,4 @@
-package com.example.quimica;
+package com.example.quimica.examen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
+import com.example.quimica.Principal_Activity;
+import com.example.quimica.R;
 
 public class QuimicaActivity extends AppCompatActivity {
 

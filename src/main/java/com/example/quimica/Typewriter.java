@@ -1,4 +1,4 @@
-package com.example.prueba1;
+package com.example.quimica;
 
 import android.os.Handler;
 import android.widget.TextView;
@@ -24,7 +24,7 @@ class Typewriter {
         new Handler().removeCallbacks(characterAdder);
         new Handler().postDelayed(characterAdder, mDelay);
 
-        MensajeContextoQuimica mensaje = new MensajeContextoQuimica();
+        MensajeActivity mensaje = new MensajeActivity();
 
 
     }

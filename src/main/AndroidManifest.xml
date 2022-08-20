@@ -14,13 +14,19 @@
         android:theme="@style/Theme.Quimica"
         tools:targetApi="31">
         <activity
-            android:name=".FisicaActivity"
+            android:name=".ExDiagnosticoActivity"
             android:exported="false" />
         <activity
-            android:name=".MatematicasActivity"
+            android:name=".MensajeActivity"
             android:exported="false" />
         <activity
-            android:name=".QuimicaActivity"
+            android:name=".examen.FisicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".examen.MatematicasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".examen.QuimicaActivity"
             android:exported="false" />
         <activity
             android:name=".Principal_Activity"

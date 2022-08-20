@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FisicaActivity">
+    tools:context=".examen.FisicaActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -14,6 +14,16 @@
         tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="41dp" />
 
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="13dp"
+        android:textColor="@color/black"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/black"
+        app:cornerRadius="20dp" />
 
 
 </RelativeLayout>
